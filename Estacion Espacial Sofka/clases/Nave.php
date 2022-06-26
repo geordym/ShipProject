@@ -2,13 +2,13 @@
 <?php
 
  abstract class Nave {
-    public int $id;
-    public String $nombre;
-    public String $paisOrigen;
-    public String $fechaActividad;
-    public int $cantidadEmpuje;
-    public int $cantidadPeso;
-    public String $funcion;
+    public $id;
+    public $nombre;
+    public $paisOrigen;
+    public $fechaActividad;
+    public $cantidadEmpuje;
+    public $cantidadPeso;
+    public $funcion;
 
     function __construct() {
         
