@@ -72,6 +72,8 @@ class control {
            
     
         }
+        
+        include_once 'view/home.php';
 
        
     }
