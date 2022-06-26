@@ -3,8 +3,8 @@
 
 class Lanzadera extends Nave {
 
-    public String $combustibleTipo;
-    public String $combustibleMaterial;
+    public $combustibleTipo;
+    public $combustibleMaterial;
     public $unidadMedidaMasa;
   
 
