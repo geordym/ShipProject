@@ -4,8 +4,8 @@ class Tripulada extends Nave {
 
 
  
-    public int $velocidadOrbitaje;
-    public int $capacidadTripulantes;
+    public $velocidadOrbitaje;
+    public $capacidadTripulantes;
     public $unidadMedidaMasa;
 
     function __construct() {
