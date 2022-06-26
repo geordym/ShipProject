@@ -2,8 +2,8 @@
 
 class Robotica extends Nave {
 
-    public String $combustibleTipo;
-    public String $combustibleMaterial;
+    public $combustibleTipo;
+    public $combustibleMaterial;
     public $unidadMedidaMasa;
  
 
