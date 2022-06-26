@@ -69,7 +69,7 @@ class control {
            // $nave = new Tripulada();
            
             $this->MODEL->insertarNave($nave);
-            header("Location: index.php");
+   
     
         }
 
