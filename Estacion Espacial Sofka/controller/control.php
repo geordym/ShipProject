@@ -33,6 +33,16 @@ class control {
         
     }
 
+    public function naveEliminar() {
+        if(isset($_REQUEST['tipo']) && isset($_REQUEST['id'])) {
+            $tipo_nave = $_REQUEST['tipo'];
+            $id_nave = $_REQUEST['id'];
+            $this->MODEL->eliminarNave($id_nave, $tipo_nave);
+           
+           $this->index();
+        }
+    }
+
     public function guardarNave() {
 
         if(isset($_REQUEST['Tipo'])) {
@@ -69,11 +79,11 @@ class control {
            // $nave = new Tripulada();
            
             $this->MODEL->insertarNave($nave);
+
+           include_once 'view/home.php';
            
     
         }
-        
-        include_once 'view/home.php';
 
        
     }

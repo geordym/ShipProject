@@ -4,7 +4,7 @@
 //PARA CONECTAR A MYSQL: $bd = "MYSQL";
 //PARA CONECTAR A SQLITE: $bd = "SQLITE";
 
-$bd = "SQLITE";
+$bd = "MYSQL";
 
 include_once 'controller/control.php';
 include_once 'config/conexion.php';

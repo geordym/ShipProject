@@ -24,7 +24,7 @@ if(isset($_GET['id']) && isset($_GET['tipo'])) {
 
     <!-- NAVIGATION  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">ESTACION ESPACIAL REPOSITORIO</a>
+      <a class="navbar-brand" href="?c=index">ESTACION ESPACIAL REPOSITORIO</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -82,7 +82,7 @@ if(isset($_GET['id']) && isset($_GET['tipo'])) {
              } ?>
                 
             
-              
+                <th>Operaciones</th>
             </thead>
             <tbody id="naves" class="table-light">
             <?php 
@@ -114,7 +114,7 @@ if(isset($_GET['id']) && isset($_GET['tipo'])) {
                 echo "<td>$nave->capacidad_tripulantes</td>";
                       break;
                 }
-              
+                echo "<td><a class='btn btn-warning' href='?tipo=$nave->tipo &c=naveEliminar&id=$nave->id_nave'>Eliminar</a></td>";
             }
               
             
