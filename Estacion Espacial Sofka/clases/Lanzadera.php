@@ -3,17 +3,18 @@
 
 class Lanzadera extends Nave {
 
-    public String $combustibleTipo;
-    public String $combustibleMaterial;
+    //ATRIBUTOS DE LA CLASE
+    public  $combustibleTipo;
+    public  $combustibleMaterial;
     public $unidadMedidaMasa;
   
-
+    //CONSTRUCTOR
     function __construct() {
         
     }
 
    
-
+    //METODO ABSTRACTO SOBREESCRITO PARA OBTENER UNA DESCRIPCION GENERAL DE LA NAVE
    function showMessageNaveInformation()
     {
        return ("La nave " . $this->nombre . " fue creada en " . $this->paisOrigen .

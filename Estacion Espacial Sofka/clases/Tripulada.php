@@ -3,15 +3,15 @@
 class Tripulada extends Nave {
 
 
- 
-    public int $velocidadOrbitaje;
-    public int $capacidadTripulantes;
+    //ATRIBUTOS
+    public $velocidadOrbitaje;
+    public $capacidadTripulantes;
     public $unidadMedidaMasa;
-
+    //CONSTRUCTOR
     function __construct() {
         
     }
-    
+    //METODO ABSTRACTO PARA MOSTRAR PEQUEÑO MENSAJE
     function showMessageNaveInformation()
     {
        return ("La nave " . $this->nombre . " fue creada en " . $this->paisOrigen .

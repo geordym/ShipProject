@@ -2,13 +2,14 @@
 <?php
 
  abstract class Nave {
-    public int $id;
-    public String $nombre;
-    public String $paisOrigen;
-    public String $fechaActividad;
-    public int $cantidadEmpuje;
-    public int $cantidadPeso;
-    public String $funcion;
+    //ATRIBUTOS DE LA CLASE ABSTRACTA
+    public $id;
+    public  $nombre;
+    public  $paisOrigen;
+    public  $fechaActividad;
+    public $cantidadEmpuje;
+    public $cantidadPeso;
+    public $funcion;
 
     function __construct() {
         
@@ -21,6 +22,9 @@
    //Kg - Tm
 
     abstract function setUnidadMedidaMasa(String $unidadMedida);
+
+    //METODO PARA QUE LAS CLASES QUE HEREDEN ESTA CLASE ABSTRACTA IMPLEMENTEN UN 
+    //PEQUEÑO MENSAJE
     
     abstract function showMessageNaveInformation();
 
